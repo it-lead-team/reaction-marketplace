@@ -1,30 +1,30 @@
 {
-  "name": "@outgrowio/reaction-marketplace",
+  "name": "@itleadopencommerce/reaction-marketplace",
   "description": "A multi-vendor marketplace plugin for Reaction Commerce",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "main": "index.js",
   "type": "module",
-  "homepage": "https://github.com/outgrow/reaction-marketplace",
-  "url": "https://github.com/outgrow/reaction-marketplace",
+  "homepage": "https://github.com/it-lead-team/reaction-marketplace.git",
+  "url": "https://github.com/it-lead-team/reaction-marketplace.git",
   "email": "loan@outgrow.io",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/outgrow/reaction-marketplace.git"
+    "url": "git+https://github.com/it-lead-team/reaction-marketplace.git"
   },
   "author": {
-    "name": "out:grow",
-    "email": "loan@outgrow.io",
-    "url": "https://outgrow.io"
+    "name": "out:grow & Oleh Obodin",
+    "email": "dev@it-lead.eu",
+    "url": "https://it-lead.eu"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/outgrow/reaction-marketplace/issues"
+    "url": "https://github.com/it-lead-team/reaction-marketplace.git/issues"
   },
   "engines": {
     "node": ">=12.14.1"
   },
   "exports": {
-    "./": "./lib/",
+    ".": "./lib/",
     "./graphql/": "./lib/graphql/",
     "./tests/": "./lib/tests/"
   },
