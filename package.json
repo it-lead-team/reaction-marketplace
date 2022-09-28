@@ -1,7 +1,7 @@
 {
   "name": "@itleadopencommerce/reaction-marketplace",
   "description": "A multi-vendor marketplace plugin for Reaction Commerce",
-  "version": "0.2.2",
+  "version": "0.3.2",
   "main": "index.js",
   "type": "module",
   "homepage": "https://github.com/it-lead-team/reaction-marketplace.git",

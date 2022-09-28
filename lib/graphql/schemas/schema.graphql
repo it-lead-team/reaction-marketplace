@@ -1,39 +1,43 @@
 extend type Mutation {
-    "Invite a new marketplace shop owner"
-    inviteShopOwner(
-        "Mutation input"
-        input: InviteShopOwnerInput
-    ): InviteShopOwnerPayload!
+  "Invite a new marketplace shop owner"
+  inviteShopOwner(
+    "Mutation input"
+    input: InviteShopOwnerInput
+  ): InviteShopOwnerPayload!
 }
 
 extend type Shop {
-    "The date the shop was created"
-    createdAt: DateTime!
+  "The date the shop was created"
+  createdAt: DateTime!
 
-    "The shop owner's full name"
-    owner: Account
+  "The shop owner's full name"
+  owner: Account
 
-    "The amount of products that the shop contains"
-    productCount: Int
+  "The amount of products that the shop contains"
+  productCount: Int
+}
+
+extend type Account {
+  Impersonation: Impersonation
 }
 
 "Input for the `inviteShopOwner` mutation"
 input InviteShopOwnerInput {
-    "An optional string identifying the mutation call, which will be returned in the response payload"
-    clientMutationId: String
+  "An optional string identifying the mutation call, which will be returned in the response payload"
+  clientMutationId: String
 
-    "The shop owner's e-mail address"
-    emailAddress: String!
+  "The shop owner's e-mail address"
+  emailAddress: String!
 
-    "The shop owner's name"
-    name: String!
+  "The shop owner's name"
+  name: String!
 }
 
 "Response from the `invieShopOwner` mutation"
 type InviteShopOwnerPayload {
-    "The same string you sent with the mutation params, for matching mutation calls with their responses"
-    clientMutationId: String
+  "The same string you sent with the mutation params, for matching mutation calls with their responses"
+  clientMutationId: String
 
-    "Whether the invitation was sent or not"
-    wasInviteSent: Boolean!
+  "Whether the invitation was sent or not"
+  wasInviteSent: Boolean!
 }
